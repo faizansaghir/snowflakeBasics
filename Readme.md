@@ -81,7 +81,7 @@ Repository to record learning of Snowflake
         so that we spend minimum time on production database <br>
     &emsp; T - Transform: Data Integration layer is where we transform 
         and establish relations between different data sources. <br>
-    &emsp; L - Load: Access Layer is from where Reporting team, or BI team can access data from once loaded. <br>
+    &emsp; L - Load: Access Layer is from where Reporting team, or BI team can access data from once loaded. <br><br>
 10. <strong>Cloud Computing in Snowflake architecture</strong> <br>
 
 ![Cloud Computing](./img/cloudComputing.PNG "CloudComputing")
