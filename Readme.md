@@ -102,3 +102,6 @@ Repository to record learning of Snowflake
     &emsp;&emsp;i. Notify if x% of quota is reached <br>
     &emsp;&emsp;ii. Suspend warehouse(after current query execution completes) and Notify if x% of quota is reached <br>
     &emsp;&emsp;iii. Suspend warehouse(cancel all query execution) and Notify if x% of quota is reached <br><br>
+13. <strong>Roles</strong> <br>
+![Roles Hierarchy](./img/rolesHierarchy.PNG "RolesHierarchy") <br>
+![Roles And Access](./img/rolesAndAccess.PNG "RolesAndAccess") <br>
