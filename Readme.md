@@ -58,7 +58,6 @@ Repository to record learning of Snowflake
     &emsp;<em>See ./sql/02_managing_warehouses.sql</em> <br>
     &emsp;<em>Note: We can also alter, drop, resume and suspend warehouse from Admin > Warehouses section of UI</em> <br><br>
 6. <strong>Scaling policies for multi-clustering</strong> <br>
-    
 ![Multi-Cluster Scaling Policy](./img/multi-clustering_scaling_policy.PNG "Multi-ClusterScalingPolicy")
 7. <strong>Creating Databases</strong> <br>
     &emsp;The two roles which have permission to create databases are: <br>
@@ -83,5 +82,4 @@ Repository to record learning of Snowflake
         and establish relations between different data sources. <br>
     &emsp; L - Load: Access Layer is from where Reporting team, or BI team can access data from once loaded. <br><br>
 10. <strong>Cloud Computing in Snowflake architecture</strong> <br>
-
 ![Cloud Computing](./img/cloudComputing.PNG "CloudComputing")
