@@ -48,15 +48,15 @@ Repository to record learning of Snowflake
     &emsp;a. select the warehouse after selecting a role <br>
     &emsp;b. Click on list icon above warehouse list in UI <br><br>
 5. <strong>Managing warehouses</strong> <br>
-    &emsp;a. To resume and suspend warehouse <br>
-    &emsp;&emsp; ALTER WAREHOUSE [warehouseName] RESUME; <br>
-    &emsp;&emsp; ALTER WAREHOUSE [warehouseName] SUSPEND; <br>
-    &emsp;b. To set new value for existing warehouse <br>
-    &emsp;&emsp;ALTER WAREHOUSE [warehouseName] SET [attribute]=[value]; <br>
-    &emsp;c. To drop a warehouse <br>
-    &emsp;&emsp; DROP WAREHOUSE [warehouseName]; <br>
-    &emsp;<em>See ./sql/02_managing_warehouses.sql</em> <br>
-    &emsp;<em>Note: We can also alter, drop, resume and suspend warehouse from Admin > Warehouses section of UI</em> <br><br>
+    a. To resume and suspend warehouse <br>
+    &emsp; ALTER WAREHOUSE [warehouseName] RESUME; <br>
+    &emsp; ALTER WAREHOUSE [warehouseName] SUSPEND; <br>
+    b. To set new value for existing warehouse <br>
+    &emsp;ALTER WAREHOUSE [warehouseName] SET [attribute]=[value]; <br>
+    c. To drop a warehouse <br>
+    &emsp; DROP WAREHOUSE [warehouseName]; <br>
+    <em>See ./sql/02_managing_warehouses.sql</em> <br>
+    <em>Note: We can also alter, drop, resume and suspend warehouse from Admin > Warehouses section of UI</em> <br><br>
 6. <strong>Scaling policies for multi-clustering</strong> <br>
 ![Multi-Cluster Scaling Policy](./img/multi-clustering_scaling_policy.PNG "Multi-ClusterScalingPolicy")
 7. <strong>Creating Databases</strong> <br>
