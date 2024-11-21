@@ -96,3 +96,9 @@ Repository to record learning of Snowflake
     To calculate the cost, Snowflake uses one of our warehouse hence the default warehouse resumes. <br>
     Apart from our created warehouses, we have CLOUD_SERVICE_ONLY warehouse. <br>
     This warehouse is used to execute Cloud Service related queries only and is not available for use in general cases. <br>
+    <strong>Resource Monitors</strong> <br>
+    &emsp;a. We can use resource monitor to set up quota on account or warehouse level. <br>
+    &emsp;b. We can also set up different levels of quota and actions to take like: <br>
+    &emsp;&emsp;i. Notify if x% of quota is reached <br>
+    &emsp;&emsp;ii. Suspend warehouse(after current query execution completes) and Notify if x% of quota is reached <br>
+    &emsp;&emsp;iii. Suspend warehouse(cancel all query execution) and Notify if x% of quota is reached <br><br>
