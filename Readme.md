@@ -71,4 +71,17 @@ Repository to record learning of Snowflake
     &emsp;b.Using SQL commands in worksheet <br>
     &emsp;&emsp;<em>See ./sql/03_creating_and_managing_databases.sql</em> <br><br>
 8. <strong>Creating Table and Loading Data</strong> <br>
-   &emsp;<em>See ./sql/04_loading_data_into_table.sql</em> <br>
+   &emsp;<em>See ./sql/04_loading_data_into_table.sql</em> <br><br>
+9. <strong>What is purpose of Data Warehouse?</strong> <br>
+    To integrate different data sources and use them for reporting and data analysis. <br>
+    These data can be of different formats, structured or unstructured etc. <br>
+    We can perform analysis on each individual database but that would put unnecessary load on the databases. <br>
+    We load data from different sources into warehouse using ETL process <br>
+    &emsp; E - Extract: Staging Layer is for loading data into warehouse in raw format, 
+        so that we spend minimum time on production database <br>
+    &emsp; T - Transform: Data Integration layer is where we transform 
+        and establish relations between different data sources. <br>
+    &emsp; L - Load: Access Layer is from where Reporting team, or BI team can access data from once loaded. <br>
+10. <strong>Cloud Computing in Snowflake architecture</strong> <br>
+
+![Cloud Computing](./img/cloudComputing.PNG "CloudComputing")
