@@ -90,4 +90,9 @@ Repository to record learning of Snowflake
     The pricing of each part depends on region/cloud provider etc. <br>
     Additionally, we can incur Data Transfer costs if applicable. <br>
     Additionally, we can also be charged for Cloud Services if they exceed 10% of warehouse consumption. <br>
-
+    We also have to select between on-demand and provisioned storage which is charged on per month basis. <br><br>
+12. <strong>Cost Management</strong> <br>
+    We can see the cost in Snowflake UI using Account > Cost management and only AccountAdmin can access it. <br>
+    To calculate the cost, Snowflake uses one of our warehouse hence the default warehouse resumes. <br>
+    Apart from our created warehouses, we have CLOUD_SERVICE_ONLY warehouse. <br>
+    This warehouse is used to execute Cloud Service related queries only and is not available for use in general cases. <br>
