@@ -60,17 +60,17 @@ Repository to record learning of Snowflake
 6. <strong>Scaling policies for multi-clustering</strong> <br>
 ![Multi-Cluster Scaling Policy](./img/multi-clustering_scaling_policy.PNG "Multi-ClusterScalingPolicy")
 7. <strong>Creating Databases</strong> <br>
-    &emsp;The two roles which have permission to create databases are: <br>
-    &emsp;&emsp;a. AccountAdmin <br>
-    &emsp;&emsp;b. SysAdmin <br>
-    &emsp;<strong>To create a database:</strong> <br>
-    &emsp;&emsp;a.Using UI <br>
-    &emsp;&emsp;&emsp;i. Go to Data > Databases > +Database <br>
-    &emsp;&emsp;&emsp;ii. Select details and click Create <br>
-    &emsp;&emsp;b.Using SQL commands in worksheet <br>
-    &emsp;&emsp;&emsp;<em>See ./sql/03_creating_and_managing_databases.sql</em> <br><br>
+    The two roles which have permission to create databases are: <br>
+    &emsp;a. AccountAdmin <br>
+    &emsp;b. SysAdmin <br>
+    <strong>To create a database:</strong> <br>
+    &emsp;a.Using UI <br>
+    &emsp;&emsp;i. Go to Data > Databases > +Database <br>
+    &emsp;&emsp;ii. Select details and click Create <br>
+    &emsp;b.Using SQL commands in worksheet <br>
+    &emsp;&emsp;<em>See ./sql/03_creating_and_managing_databases.sql</em> <br><br>
 8. <strong>Creating Table and Loading Data</strong> <br>
-   &emsp;<em>See ./sql/04_loading_data_into_table.sql</em> <br><br>
+   <em>See ./sql/04_loading_data_into_table.sql</em> <br><br>
 9. <strong>What is purpose of Data Warehouse?</strong> <br>
     To integrate different data sources and use them for reporting and data analysis. <br>
     These data can be of different formats, structured or unstructured etc. <br>
