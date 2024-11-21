@@ -82,4 +82,12 @@ Repository to record learning of Snowflake
         and establish relations between different data sources. <br>
     &emsp; L - Load: Access Layer is from where Reporting team, or BI team can access data from once loaded. <br><br>
 10. <strong>Cloud Computing in Snowflake architecture</strong> <br>
-![Cloud Computing](./img/cloudComputing.PNG "CloudComputing")
+![Cloud Computing](./img/cloudComputing.PNG "CloudComputing") <br><br>
+11. <strong>Pricing in Snowflake</strong> <br>
+    The pricing are decoupled into two parts: <br>
+    &emsp;a. Storage <br>
+    &emsp;b. Compute <br>
+    The pricing of each part depends on region/cloud provider etc. <br>
+    Additionally, we can incur Data Transfer costs if applicable. <br>
+    Additionally, we can also be charged for Cloud Services if they exceed 10% of warehouse consumption. <br>
+
