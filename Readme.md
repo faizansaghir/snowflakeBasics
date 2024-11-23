@@ -104,4 +104,22 @@ Repository to record learning of Snowflake
     &emsp;&emsp;iii. Suspend warehouse(cancel all query execution) and Notify if x% of quota is reached <br><br>
 13. <strong>Roles</strong> <br>
 ![Roles Hierarchy](./img/rolesHierarchy.PNG "RolesHierarchy") <br>
-![Roles And Access](./img/rolesAndAccess.PNG "RolesAndAccess") <br>
+![Roles And Access](./img/rolesAndAccess.PNG "RolesAndAccess") <br><br>
+14. <strong>Loading Data </strong> <br>
+    We can load data into snowflake in two manner: <br>
+    &emsp;a. Bulk loading: Most frequent method using warehouses and loading from stages. <br>
+    &emsp;&emsp;We can use COPY command along with transformations. <br>
+    &emsp;b. Continuous loading: Designed to load small volume of data automatically when they are added to stages. <br>
+    &emsp;&emsp;Provides us with latest data and uses Snowpipe (Serverless feature). <br><br>
+15. <strong>Stages?</strong> <br>
+    It is different from data warehouse stages. It is location of data files from where data can be loaded. <br>
+    It has details like URL, URI or PATH of location along with credentials and other required fields. <br>
+    It can be of 2 types: <br>
+    &emsp;a. External Stage: Database object created in Schema which is in External cloud provider like AWS, GCD, Azure, etc. <br>
+    &emsp;&emsp; Created using CREATE STAGE(URL, access settings) command. <br>
+    &emsp;&emsp;These may have additional cost if region/ platform(platform selected during signup) differs. <br> 
+    &emsp;b. Internal Stage: Local storage maintained by Snowflake (Not used in general) <br>
+    <em>See ./sql/05_creating_stages.sql for example on creating and listing files in external stage</em> <br>
+    When external stages are used in Snowflake, we use @ before stage name. <br>
+    We need not use @ before stage name when we create or replace or alter the stage. <br>
+    <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br><br>
