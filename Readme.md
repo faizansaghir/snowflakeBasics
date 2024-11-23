@@ -123,3 +123,5 @@ Repository to record learning of Snowflake
     When external stages are used in Snowflake, we use @ before stage name. <br>
     We need not use @ before stage name when we create or replace or alter the stage. <br>
     <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br><br>
+16. <strong>COPY command with Transforming Data</strong> <br>
+    <em>See ./sql/07_COPY_command_with_transformations.sql</em>
