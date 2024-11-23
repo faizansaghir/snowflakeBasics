@@ -111,7 +111,7 @@ Repository to record learning of Snowflake
     &emsp;&emsp;We can use COPY command along with transformations. <br>
     &emsp;b. Continuous loading: Designed to load small volume of data automatically when they are added to stages. <br>
     &emsp;&emsp;Provides us with latest data and uses Snowpipe (Serverless feature). <br><br>
-15. <strong>Stages?</strong> <br>
+15. <strong>Stages</strong> <br>
     It is different from data warehouse stages. It is location of data files from where data can be loaded. <br>
     It has details like URL, URI or PATH of location along with credentials and other required fields. <br>
     It can be of 2 types: <br>
