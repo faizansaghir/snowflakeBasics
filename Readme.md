@@ -125,3 +125,8 @@ Repository to record learning of Snowflake
     <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br><br>
 16. <strong>COPY command with Transforming Data</strong> <br>
     <em>See ./sql/07_COPY_command_with_transformations.sql</em>
+17. <strong>COPY command with error handling</strong> <br>
+    We have different options when an error occurs while loading the data from files. <br>
+    The default is ABORT_STATEMENT which will exit the execution as soon as error is encountered and no data is loaded. <br>
+    We also have options to SKIP_FILE, CONTINUE, SKIP_FILE_[errorLimitAbsolute/ errorLimitPercentage]. <br>
+    <em>See ./sql/08_COPY_command_with_error_handling.sql</em> <br><br>
