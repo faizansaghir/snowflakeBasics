@@ -130,3 +130,10 @@ Repository to record learning of Snowflake
     The default is ABORT_STATEMENT which will exit the execution as soon as error is encountered and no data is loaded. <br>
     We also have options to SKIP_FILE, CONTINUE, SKIP_FILE_[errorLimitAbsolute/ errorLimitPercentage]. <br>
     <em>See ./sql/08_COPY_command_with_error_handling.sql</em> <br><br>
+18. <strong>File Format</strong> <br>
+    These are Database Schema objects that are used to define different properties of files to be used when referred. <br>
+    Once a file format type is defined while creating, it cannot be changed, hence, its associated properties also. <br>
+    Other properties apart from type can be altered using alter command. <br>
+    All options that are available in file format object are also available under stage object as sub-attribute. <br>
+    <em>See ./sql/09_file_format.sql</em> <br>
+    <em>Note: file_format attribute in COPY command overrides the options in FILE FORMAT object if both are used. <br><br>
