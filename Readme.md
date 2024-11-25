@@ -146,3 +146,6 @@ Repository to record learning of Snowflake
     &emsp;b. <strong>SIZE_LIMIT:</strong> Maximum size(in bytes) of data loaded in that command(at least one file loaded). <br>
     &emsp;&emsp;When the threshold is exceeded, the COPY operation stops loading next file(s). <br>
     &emsp;<em>See ./sql/12_size_limit_in_copy_command.sql</em> <br>
+    &emsp;c. <strong>RETURN_FAILED_ONLY:</strong> Return as result only those files that are partially loaded. <br>
+    &emsp;&emsp;It is used in combination with ON_ERROR=CONTINUE or SKIP_FILE or SKIP_FILE_n. <br>
+    &emsp;<em>See ./sql/13_return_failed_only_in_copy_command.sql</em> <br>
