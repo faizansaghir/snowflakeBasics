@@ -137,3 +137,7 @@ Repository to record learning of Snowflake
     All options that are available in file format object are also available under stage object as sub-attribute. <br>
     <em>See ./sql/09_file_format.sql</em> <br>
     <em>Note: file_format attribute in COPY command overrides the options in FILE FORMAT object if both are used. <br><br>
+19. <strong>Options in COPY Command</strong> <br>
+    &emsp;a. <strong>VALIDATION_MODE:</strong> When we use this option, data is not loaded and we only run validation. <br>
+    &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_ERROR, then all errors after validation are returned. <br>
+    &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_n_ROWS, then first n rows are validated and returned if no error. <br>
