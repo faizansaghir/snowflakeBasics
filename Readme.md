@@ -136,10 +136,13 @@ Repository to record learning of Snowflake
     Other properties apart from type can be altered using alter command. <br>
     All options that are available in file format object are also available under stage object as sub-attribute. <br>
     <em>See ./sql/09_file_format.sql</em> <br>
-    <em>Note: file_format attribute in COPY command overrides the options in FILE FORMAT object if both are used. <br><br>
+    <em>Note: file_format attribute in COPY command overrides the options in FILE FORMAT object if both are used.</em> <br><br>
 19. <strong>Options in COPY Command</strong> <br>
     &emsp;a. <strong>VALIDATION_MODE:</strong> When we use this option, data is not loaded and we only run validation. <br>
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_ERROR, then all errors after validation are returned. <br>
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_n_ROWS, then first n rows are validated and returned if no error. <br>
     &emsp;<em>See ./sql/10_validation_mode_in_copy_command.sql</em> <br>
-    &emsp;<em> See ./sql/11_storing_rejected_records_for_reference.sql for options for storing rejected records.</em> <br>
+    &emsp;<em>See ./sql/11_storing_rejected_records_for_reference.sql for options for storing rejected records.</em> <br>
+    &emsp;b. <strong>SIZE_LIMIT:</strong> Maximum size(in bytes) of data loaded in that command(at least one file loaded). <br>
+    &emsp;&emsp;When the threshold is exceeded, the COPY operation stops loading next file(s). <br>
+    &emsp;<em>See ./sql/12_size_limit_in_copy_command.sql</em> <br>
