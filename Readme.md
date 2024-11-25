@@ -152,3 +152,6 @@ Repository to record learning of Snowflake
     &emsp;d. <strong>TRUNCATECOLUMNS:</strong> Truncate string value if length of string value for the column exceed limit. <br>
     &emsp;&emsp;If set to true, data is loaded with truncation else query is aborted/ row skipped as per our preference <br>
     &emsp;<em>See ./sql/14_truncatecolumn_in_copy_command.sql</em> <br>
+    &emsp;e. <strong>FORCE:</strong> Load data from file even if it is already loaded and has not changed. <br>
+    &emsp;&emsp;It can lead to duplicate entries if set to true and also additional cost. <br>
+    &emsp;<em>See ./sql/15_force_in_copy_command.sql</em> <br>
