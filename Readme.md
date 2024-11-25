@@ -155,3 +155,6 @@ Repository to record learning of Snowflake
     &emsp;e. <strong>FORCE:</strong> Load data from file even if it is already loaded and has not changed. <br>
     &emsp;&emsp;It can lead to duplicate entries if set to true and also additional cost. <br>
     &emsp;<em>See ./sql/15_force_in_copy_command.sql</em> <br>
+    <strong>Load History:</strong> The history related to COPY into command executed for each table is stored in a table. <br>
+    &emsp;The SNOWFLAKE DB has history even if table was deleted and recreated while local DB has history for current table only. <br>
+    <em>See ./sql/16_load_history_for_copy_command.sql</em> <br><br>
