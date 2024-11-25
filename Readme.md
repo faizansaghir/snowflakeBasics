@@ -149,3 +149,6 @@ Repository to record learning of Snowflake
     &emsp;c. <strong>RETURN_FAILED_ONLY:</strong> Return as result only those files that are partially loaded. <br>
     &emsp;&emsp;It is used in combination with ON_ERROR=CONTINUE or SKIP_FILE or SKIP_FILE_n. <br>
     &emsp;<em>See ./sql/13_return_failed_only_in_copy_command.sql</em> <br>
+    &emsp;d. <strong>TRUNCATECOLUMNS:</strong> Truncate string value if length of string value for the column exceed limit. <br>
+    &emsp;&emsp;If set to true, data is loaded with truncation else query is aborted/ row skipped as per our preference <br>
+    &emsp;<em>See ./sql/14_truncatecolumn_in_copy_command.sql</em> <br>
