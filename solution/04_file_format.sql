@@ -1,0 +1,18 @@
+CREATE OR REPLACE STAGE STAGE_2
+    url='s3://snowflake-assignments-mc/fileformat/';
+
+DESC STAGE STAGE_2;
+
+CREATE OR REPLACE FILE FORMAT file_format_1
+    FIELD_DELIMITER='|';
+
+DESC FILE FORMAT file_format_1;
+
+ALTER FILE FORMAT file_format_1
+    SET SKIP_HEADER=1;
+
+LIST @STAGE_2;
+
+COPY INTO CUSTOMERS
+FROM @STAGE_2
+file_format=FILE_FORMAT_1;

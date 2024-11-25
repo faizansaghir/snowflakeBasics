@@ -1,0 +1,33 @@
+If you have not created the database EXERCISE_DB then you can do so. The same goes for the customer table with the following columns:
+
+    ID INT,
+    first_name varchar,
+    last_name varchar,
+    email varchar,
+    age int,
+    city varchar
+
+
+
+1. Create a stage & file format object
+
+    The data is available under: s3://snowflake-assignments-mc/fileformat/
+
+    Data type: CSV - delimited by '|' (pipe)
+
+    Header is in the first line.
+
+
+
+2. List the files in the table
+
+
+
+3. Load the data in the existing customers table using the COPY command your stage and the created file format object.
+
+
+
+4. How many rows have been loaded in this assignment?
+
+Questions for this assignment
+    How many rows have been loaded?
