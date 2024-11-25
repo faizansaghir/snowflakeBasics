@@ -142,3 +142,4 @@ Repository to record learning of Snowflake
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_ERROR, then all errors after validation are returned. <br>
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_n_ROWS, then first n rows are validated and returned if no error. <br>
     &emsp;<em>See ./sql/10_validation_mode_in_copy_command.sql</em> <br>
+    &emsp;<em> See ./sql/11_storing_rejected_records_for_reference.sql for options for storing rejected records.</em> <br>
