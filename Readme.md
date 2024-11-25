@@ -124,7 +124,7 @@ Repository to record learning of Snowflake
     We need not use @ before stage name when we create or replace or alter the stage. <br>
     <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br><br>
 16. <strong>COPY command with Transforming Data</strong> <br>
-    <em>See ./sql/07_COPY_command_with_transformations.sql</em>
+    <em>See ./sql/07_COPY_command_with_transformations.sql</em> <br><br>
 17. <strong>COPY command with error handling</strong> <br>
     We have different options when an error occurs while loading the data from files. <br>
     The default is ABORT_STATEMENT which will exit the execution as soon as error is encountered and no data is loaded. <br>
@@ -141,3 +141,4 @@ Repository to record learning of Snowflake
     &emsp;a. <strong>VALIDATION_MODE:</strong> When we use this option, data is not loaded and we only run validation. <br>
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_ERROR, then all errors after validation are returned. <br>
     &emsp;&emsp;If we set the VALIDATION_MODE to RETURN_n_ROWS, then first n rows are validated and returned if no error. <br>
+    &emsp;<em>See ./sql/10_validation_mode_in_copy_command.sql</em> <br>
