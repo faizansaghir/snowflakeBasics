@@ -58,7 +58,7 @@ Repository to record learning of Snowflake
     <em>See ./sql/02_managing_warehouses.sql</em> <br>
     <em>Note: We can also alter, drop, resume and suspend warehouse from Admin > Warehouses section of UI</em> <br><br>
 6. <strong>Scaling policies for multi-clustering</strong> <br>
-![Multi-Cluster Scaling Policy](./img/multi-clustering_scaling_policy.PNG "Multi-ClusterScalingPolicy")
+![Multi-Cluster Scaling Policy](./img/multi-clustering_scaling_policy.PNG "Multi-ClusterScalingPolicy") <br><br>
 7. <strong>Creating Databases</strong> <br>
     The two roles which have permission to create databases are: <br>
     &emsp;a. AccountAdmin <br>
@@ -158,3 +158,9 @@ Repository to record learning of Snowflake
     <strong>Load History:</strong> The history related to COPY into command executed for each table is stored in a table. <br>
     &emsp;The SNOWFLAKE DB has history even if table was deleted and recreated while local DB has history for current table only. <br>
     <em>See ./sql/16_load_history_for_copy_command.sql</em> <br><br>
+20. <strong>Loading Unstructured Data</strong> <br>
+    &emsp;a. <strong>JSON:</strong> <br>
+    &emsp;&emsp;i. Loading raw data: <em>See ./sql/17_load_raw_json.sql</em> <br>
+    &emsp;&emsp;ii. Parsing JSON raw data: <em>See ./sql/18_parsing_json_data.sql</em> <br>
+    &emsp;&emsp;iii. Flatten hierarchical data: <em>See ./sql/19_flatten_hierarchical_data.sql</em> <br>
+    &emsp;<em>To insert data into table for new or pre-defined table, See ./sql/20_insert_into_table.sql</em> <br>
