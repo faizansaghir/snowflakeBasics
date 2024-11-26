@@ -159,8 +159,10 @@ Repository to record learning of Snowflake
     &emsp;The SNOWFLAKE DB has history even if table was deleted and recreated while local DB has history for current table only. <br>
     <em>See ./sql/16_load_history_for_copy_command.sql</em> <br><br>
 20. <strong>Loading Unstructured Data</strong> <br>
-    &emsp;a. <strong>JSON:</strong> <br>
+    &emsp;a. <strong>JSON</strong> <br>
     &emsp;&emsp;i. Loading raw data: <em>See ./sql/17_load_raw_json.sql</em> <br>
     &emsp;&emsp;ii. Parsing JSON raw data: <em>See ./sql/18_parsing_json_data.sql</em> <br>
     &emsp;&emsp;iii. Flatten hierarchical data: <em>See ./sql/19_flatten_hierarchical_data.sql</em> <br>
     &emsp;<em>To insert data into table for new or pre-defined table, See ./sql/20_insert_into_table.sql</em> <br>
+    &emsp;b. <strong>Parquet</strong> <br>
+    &emsp;&emsp;<em>See ./sql/21_loading_parquet_data_from_stage.sql</em> <br><br>
