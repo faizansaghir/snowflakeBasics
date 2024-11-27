@@ -166,3 +166,23 @@ Repository to record learning of Snowflake
     &emsp;<em>To insert data into table for new or pre-defined table, See ./sql/20_insert_into_table.sql</em> <br>
     &emsp;b. <strong>Parquet</strong> <br>
     &emsp;&emsp;<em>See ./sql/21_loading_parquet_data_from_stage.sql</em> <br><br>
+21. <strong>Performance Optimization</strong> <br>
+    ![Performance Optimization](./img/performanceOptimization.PNG "PerformanceOptimization") <br>
+    &emsp;a. Dedicated Warehouse: <em>See ./sql/22_create_dedicated_warehouse_role_and_user.sql</em> <br>
+    &emsp;b. Scaling up/down: We can alter the warehouse size using SQl ALTER command or UI. <br>
+    &emsp;&emsp;It depends on how complex our queries are, not on how many queries we are executing/ user being handled. <br>
+    &emsp;c. Scaling out/in: Used to handle large number of concurrent users. Can also handle fluctuating number of users. <br>
+    &emsp;&emsp;Multi-custer features are available in Enterprise editions or above. <br>
+    &emsp;&emsp;It is always recommended to have multi-cluster warehouses with min size as 1 as it has no down-side. <br>
+    &emsp;d. Caching: It is automatically enabled by default. If a query is executed twice, results are cached and re-used. <br>
+    &emsp;&emsp;Results are cached for 24 hours or until the underlying data has changed. <br>
+    &emsp;&emsp;We should ensure similar queries are run on same warehouse to get maximum benefit of caching. <br>
+    &emsp;e. Clustering: Snowflake automatically maintains the clustering keys and is pretty good at it. <br>
+    &emsp;&emsp;In certain cases we can specify our own clustering key or expression which will be more suitable. <br>
+    &emsp;&emsp;We cluster on basically expression or column which is mostly used in our WHERE clause or JOIN. <br>
+    &emsp;&emsp;Syntax for defining custom clustering key or altering, deleting cluster key: <br>
+    &emsp;&emsp;&emsp;i. CREATE TABLE <name> ... CLUSTER BY ( <column1> [ , <column2> ... ] ) <br>
+    &emsp;&emsp;&emsp;ii. CREATE TABLE <name> ... CLUSTER BY ( <expression> ) <br>
+    &emsp;&emsp;&emsp;iii. ALTER TABLE <name> CLUSTER BY ( <expr1> [ , <expr2> ... ] ) <br>
+    &emsp;&emsp;&emsp;iv. ALTER TABLE <name> DROP CLUSTERING KE <br>
+    &emsp;&emsp; <em>See ./sql/23_clustering.sql</em> <br><br>
