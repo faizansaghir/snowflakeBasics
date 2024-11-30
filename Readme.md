@@ -122,7 +122,9 @@ Repository to record learning of Snowflake
     <em>See ./sql/05_creating_stages.sql for example on creating and listing files in external stage</em> <br>
     When external stages are used in Snowflake, we use @ before stage name. <br>
     We need not use @ before stage name when we create or replace or alter the stage. <br>
-    <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br><br>
+    <em>See ./sql/06_COPY_command.sql for example on loading data from external stage</em> <br>
+    <em>Note: to unload data from Snowflake to External storage, use COPY INTO command with following syntax <br>
+    &emsp;COPY INTO @[stageName] FROM [tableName]</em> <br><br>
 16. <strong>COPY command with Transforming Data</strong> <br>
     <em>See ./sql/07_COPY_command_with_transformations.sql</em> <br><br>
 17. <strong>COPY command with error handling</strong> <br>
